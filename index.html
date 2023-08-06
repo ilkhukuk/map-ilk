@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Harita</title>
+    <link rel="stylesheet" href="style.css" />
+
+ 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+   
+    
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+  </head>
+  <body>
+    <aside>
+      <div class="sidebar">
+        <h1>NOTLAR</h1>
+        <form>
+          <div class="field">
+            <label>Not</label>
+            <input type="text" />
+          </div>
+          <div class="field">
+            <label>Tarih Ekle</label>
+            <input type="date" />
+          </div>
+          <div class="field">
+            <label>Location</label>
+            <select>
+              <option value="park">Park Yeri</option>
+              <option value="home">Ev</option>
+              <option value="job">İş</option>
+              <option value="goto">Ziyaret</option>
+              <option value="school">Okul</option>
+              <option value="shopping">Market</option>
+              <option value="hospital">Doktor</option>
+            </select>
+          </div>
+          <button>Ekle</button>
+        </form>
+        <ul></ul>
+      </div>
+    </aside>
+    <div id="map"></div>
+    <!-- js bağlantıları -->
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
